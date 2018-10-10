@@ -2,11 +2,10 @@ import React from 'react';
 
 const HomePage = () => (
   <div>
-    <h1>Welcome</h1>
-    <p>This is my site. Take a look around!</p>
-    <h2>&#123;Front End,</h2>
-    <h2>Back End&#125;</h2>
-    <h2>Full Stack</h2>
+    <h1>Sonam Klein</h1>
+    <h1 className = "makeGrey">&#123;Front End,</h1>
+    <h1 className = "makeGrey">Back End&#125;</h1>
+    <h1>Full Stack Developer</h1>
   </div>
 );
 
