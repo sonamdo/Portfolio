@@ -1,8 +1,8 @@
 {
-  "name": "expensify",
+  "name": "Portfolio",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Andrew Mead",
+  "author": "Sonam",
   "license": "MIT",
   "scripts": {
     "serve": "live-server public/",
