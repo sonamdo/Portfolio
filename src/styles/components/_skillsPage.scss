@@ -5,3 +5,10 @@ li{
 .skillImg{
   width: 100px
 }
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: $xxl-size;
+  align-items: center;
+}

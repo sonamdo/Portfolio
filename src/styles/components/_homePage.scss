@@ -1,3 +1,18 @@
 .makeGrey {
   color: grey
 }
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  padding: $xxl-size;
+  align-items: center;
+}
+
+.mainButton {
+  border: none;
+  color: white;
+  padding: 15px;
+  background-color: grey;
+  border: 1px solid black;
+}
