@@ -8,5 +8,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import $ from 'jquery';
 import 'slick-carousel';
 import Slider from "react-slick"
+import Main from "./components/Main.js"
 
-ReactDOM.render(<AppRouter />, document.getElementById('app'));
+ReactDOM.render(<Main />, document.getElementById('app'));

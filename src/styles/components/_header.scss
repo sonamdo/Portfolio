@@ -2,22 +2,31 @@
   justify-content: flex-end;
   display: flex;
   padding: $m-size;
-  background-color: #222;
-  color: white;
+  border-bottom: 1px solid grey;
 }
 
 .headerLink{
-  color:white;
+  color:grey;
   padding: 10px;
   font-size: $m-size
 }
 
 .headerLink:hover{
   text-decoration: none;
-  color: green
+  color: black
 }
 
 .is-active {
   text-decoration: none;
-  color: grey;
+  color: black;
+}
+
+li {
+  list-style-type: none
+}
+
+p{
+  padding: $m-size;
+  justify-content: flex-start;
+  display: flex;
 }

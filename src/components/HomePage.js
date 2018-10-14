@@ -8,11 +8,6 @@ const HomePage = () => (
       <h1 className = "makeGrey">Back End&#125;</h1>
       <h1>Full Stack Developer</h1>
     </div>
-    <div>
-      <button className ="mainButton">Learn More</button>
-      <br/>
-      <button className = "mainButton">Contact Me</button>
-    </div>
   </div>
 );
 
