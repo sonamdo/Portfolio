@@ -3,8 +3,8 @@ import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
 import NotFoundPage from '../components/NotFoundPage';
 import Header from '../components/Header';
 import HomePage from '../components/HomePage';
+import PortfolioPage from '../components/PortfolioPage'
 import ContactPage from '../components/ContactPage';
-import PortfolioPage from '../components/PortfolioPage';
 import SkillsPage from '../components/SkillsPage';
 
 const AppRouter = () => (

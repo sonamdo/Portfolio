@@ -1,10 +1,8 @@
 import React from 'react';
 
 const SkillsPage = () => (
-  <div>
-    <h2 id = "skills">Skills</h2>
-      <div className = "row">
-        <div className = "col-md-4">
+  <div className = "container">
+        <div className = "skillTree">
           <img src = {require("../images/MonitorPhone.png")} className = "skillImg" alt = "Front End" />
           <ul><div className = "skillTreeHead">Front End</div>
             <div className = "skillTreeBody">
@@ -18,7 +16,7 @@ const SkillsPage = () => (
             </div>
           </ul>
         </div>
-        <div className = "col-md-4 skillTree">
+        <div className = "skillTree">
         <img src = {require("../images/Screen.png")} className = "skillImg" alt = "Back End" />
           <ul><div className = "skillTreeHead">Back End</div>
             <div className = "skillTreeBody">
@@ -32,7 +30,7 @@ const SkillsPage = () => (
             </div>
           </ul>
         </div>
-        <div className = "col-md-4 skillTree">
+        <div className = "skillTree">
         <img src = {require("../images/Gears.png")} className = "skillImg" alt = "Supporting Skills" />
           <ul><div className = "skillTreeHead">Supporting Skills</div>
             <div className = "skillTreeBody">
@@ -44,7 +42,6 @@ const SkillsPage = () => (
             </div>
           </ul>
         </div>
-      </div>
   </div>
 );
 

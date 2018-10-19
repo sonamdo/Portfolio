@@ -5,6 +5,7 @@ import HomePage from './HomePage';
 import ContactPage from './ContactPage';
 import PortfolioPage from './PortfolioPage';
 import SkillsPage from './SkillsPage';
+import Footer from './Footer';
 
 const Main = () => (
   <div className = "mainContainer">
@@ -12,6 +13,7 @@ const Main = () => (
     <HomePage />
     <PortfolioPage />
     <SkillsPage />
+    <Footer />
   </div>
 )
 

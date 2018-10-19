@@ -1,7 +1,3 @@
-.slick-prev:before, .slick-next:before {
-    color:black !important;
-}
-
 .thumbnail:hover{
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -15,22 +11,23 @@
 }
 
 .thumbnail {
-  padding: 10px
-}
-
-.co{
-  padding: 20px;
+  width: 270px;
 }
 
 .makeBold{
   font-weight: bold;
-  margin-top: 10px;
   text-align: center
 }
 
 .description{
   padding: 0px 15px 0px 15px;
   text-align: justify;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
 }
 
 @media only screen and (max-width:720px){

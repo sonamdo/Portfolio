@@ -2,13 +2,16 @@ li{
   font-size: $m-size
 }
 
+ul{
+  margin: 0;
+  padding: 0;
+}
+
 .skillImg{
   width: 100px
 }
 
-.row {
-  display: flex;
-  justify-content: space-between;
-  padding: $xxl-size;
-  align-items: center;
+.skillTree{
+  width: 300px;
+  text-align: center;
 }

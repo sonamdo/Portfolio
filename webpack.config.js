@@ -27,7 +27,17 @@ module.exports = {
               options: {}
             }
           ]
-        }]
+    },
+    {
+      test: /\.(ttf|eot|woff|woff2)$/,
+      use:  [
+        {
+          loader: 'file-loader',
+          options: {}
+        }
+      ]
+    }
+  ]
   },
   devtool: 'cheap-module-eval-source-map',
   devServer: {
