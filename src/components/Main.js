@@ -5,6 +5,7 @@ import HomePage from './HomePage';
 import ContactPage from './ContactPage';
 import PortfolioPage from './PortfolioPage';
 import SkillsPage from './SkillsPage';
+import CoursesPage from './CoursesPage';
 import Footer from './Footer';
 
 const Main = () => (
@@ -13,6 +14,7 @@ const Main = () => (
     <HomePage />
     <PortfolioPage />
     <SkillsPage />
+    <CoursesPage />
     <Footer />
   </div>
 )

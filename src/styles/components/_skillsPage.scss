@@ -1,5 +1,6 @@
 li{
-  font-size: $m-size
+  font-size: $m-size;
+  color: grey
 }
 
 ul{
@@ -14,4 +15,13 @@ ul{
 .skillTree{
   width: 300px;
   text-align: center;
+}
+
+.skillBox{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.skillTreeHead{
+  padding: 20px;
 }
