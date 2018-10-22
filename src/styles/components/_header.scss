@@ -5,20 +5,15 @@
   border-bottom: 1px solid grey;
 }
 
-.headerLink{
+.headerLink a{
   color:grey;
   padding: 10px;
   font-size: $m-size
 }
 
-.headerLink:hover{
+.headerLink a:hover{
   text-decoration: none;
   color: black
-}
-
-.is-active {
-  text-decoration: none;
-  color: black;
 }
 
 li {
