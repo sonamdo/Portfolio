@@ -2,7 +2,7 @@ import React from 'react';
 
 const CoursesPage = () => (
   <div>
-    <h1 className = "sectionBanner">Courses</h1>
+    <h1 className = "sectionBanner" id = "courseAnchor">Courses</h1>
     <div className = "container CoursesPage">
       <div className = "co">
         <img src = {require("../images/freeCodeCamp.jpg")} className = "coursePics" /><br />
