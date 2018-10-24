@@ -5,6 +5,8 @@
   background-color: white;
   max-width: 60rem;
   margin:auto;
+  list-style-type: none;
+  font-size: 10px;
 }
 
 #navbarContainer{
@@ -28,10 +30,6 @@
   color: black
 }
 
-li {
-  list-style-type: none
-}
-
 p{
   padding: $m-size;
   justify-content: flex-start;
@@ -41,4 +39,15 @@ p{
 .align-left{
   align-self: center;
   flex-grow: 5
+}
+
+#logoSmall{
+  width: 25px;
+}
+
+@media only screen and (max-width:720px){
+  #navbar li{
+    display: inline-block;
+    font-size: 60%
+  }
 }
