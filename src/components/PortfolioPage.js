@@ -15,7 +15,8 @@ $(document).ready(function() {
 })
 
 return (
-  <div className = 'container' id = "portfolioAnchor">
+  <div className = 'container'>
+  <span id = "portfolioAnchor"></span>
 
     <div className = "co">
       <div className = "thumbnail">

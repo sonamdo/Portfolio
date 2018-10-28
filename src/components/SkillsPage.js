@@ -1,10 +1,11 @@
 import React from 'react';
 
 const SkillsPage = () => (
-  <div id = "skillsAnchor">
+  <div>
+  <span id = "skillsAnchor"></span>
     <h1 className = "sectionBanner">Skills</h1>
     <div className = "container skillBox">
-        <div className = "skillTree">
+        <div className = "skillTree co">
           <img src = {require("../images/MonitorPhone.png")} className = "skillImg" alt = "Front End" />
           <ul><div className = "skillTreeHead"><h3>Front End</h3></div>
             <div className = "skillTreeBody">
@@ -18,7 +19,7 @@ const SkillsPage = () => (
             </div>
           </ul>
         </div>
-        <div className = "skillTree">
+        <div className = "skillTree co">
         <img src = {require("../images/Screen.png")} className = "skillImg" alt = "Back End" />
           <ul><div className = "skillTreeHead"><h3>Back End</h3></div>
             <div className = "skillTreeBody">
@@ -32,7 +33,7 @@ const SkillsPage = () => (
             </div>
           </ul>
         </div>
-        <div className = "skillTree">
+        <div className = "skillTree co">
         <img src = {require("../images/Gears.png")} className = "skillImg" alt = "Supporting Skills" />
           <ul><div className = "skillTreeHead"><h3>Supporting Skills</h3></div>
             <div className = "skillTreeBody">

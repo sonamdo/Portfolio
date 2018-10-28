@@ -1,7 +1,8 @@
 import React from 'react';
 
 const HomePage = () => (
-  <div className = "banner" id = "homeAnchor">
+  <div className = "banner">
+  <span id = "homeAnchor"></span>
     <div>
       <img src = {require("../images/logo.png")} id = "logo"/>
       <h1 className = "makeGrey">Ecommerce Specialist</h1>
