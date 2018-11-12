@@ -5,13 +5,15 @@ import $ from 'jquery';
 const PortfolioPage = () => {
 
 $(document).ready(function() {
-  $('.thumbnail').hover(function(){
-    $(this).find('.thumbnailPic').hide();
-    $(this).find('.thumbnailText').show();
-  }, function() {
-    $(this).find('.thumbnailPic').show();
-    $(this).find('.thumbnailText').hide();
-  })
+  if ( $(window).width() > 720) {
+    $('.thumbnail').hover(function(){
+      $(this).find('.thumbnailPic').hide();
+      $(this).find('.thumbnailText').show();
+    }, function() {
+      $(this).find('.thumbnailPic').show();
+      $(this).find('.thumbnailText').hide();
+    })
+  }
 })
 
 return (
