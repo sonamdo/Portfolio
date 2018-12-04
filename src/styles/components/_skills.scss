@@ -1,0 +1,43 @@
+#skills li{
+  font-size: $s-size;
+  color: grey;
+  font-style: bold
+}
+
+#skills {
+    background-color: #f3f3f3;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.skillImg{
+  width: 70px
+}
+
+.skillTree{
+  width: 300px;
+  text-align: center;
+}
+
+.skillBox{
+  padding-bottom: 40px;
+}
+
+.skillTreeHead{
+  padding: 20px;
+}
+
+#skillsAnchor{
+  position: absolute;
+  top: 1400px;
+}
+
+@media only screen and (max-width:720px){
+  .skillBox{
+    margin: 0 auto
+  }
+}

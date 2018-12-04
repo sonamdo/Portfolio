@@ -1,20 +1,20 @@
 import React from 'react';
-import NotFoundPage from './NotFoundPage';
-import Header from './Header';
-import HomePage from './HomePage';
-import ContactPage from './ContactPage';
-import PortfolioPage from './PortfolioPage';
-import SkillsPage from './SkillsPage';
-import CoursesPage from './CoursesPage';
-import Footer from './Footer';
+import Header from './Header.js';
+import Banner from './Banner.js';
+import About from './About.js';
+import Portfolio from './Portfolio.js';
+import Skills from './Skills.js';
+import Courses from './Courses.js';
+import Contact from './Contact.js';
+import Footer from './Footer.js';
 
 const Main = () => (
-  <div className = "mainContainer">
+  <div>
     <Header />
-    <HomePage />
-    <PortfolioPage />
-    <SkillsPage />
-    <CoursesPage />
+    <Banner />
+    <Portfolio />
+    <Skills />
+    <Courses />
     <Footer />
   </div>
 )
