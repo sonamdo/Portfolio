@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Header = () => (
-  <nav className = "navbar navbar-expand-lg bg-dark fixed-top">
+  <nav className = "navbar navbar-expand-lg bg-dark fixed-top" id ="headerNavbar">
     <div className = "container">
       <ul className = "navbar-nav">
         <li className = "nav-item active">

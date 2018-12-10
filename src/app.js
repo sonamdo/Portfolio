@@ -7,9 +7,9 @@ import 'bootstrap';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faFacebookF, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faCodepen, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
-library.add(faTwitter, faFacebookF, faLinkedinIn)
+library.add(faGithub, faCodepen, faLinkedinIn)
 
 import $ from 'jquery';
 import Main from "./components/Main.js"

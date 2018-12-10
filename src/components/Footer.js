@@ -11,13 +11,19 @@ const Footer = () => (
         <div className = 'col-sm-4'>
         </div>
         <div className = 'col-sm-4'>
-          <div className = 'container'>
-            <div className = 'row'>
-              <div className = 'col-sm-1'> <FontAwesomeIcon icon={["fab", "facebook-f"]} /> </div>
-              <div className = 'col-sm-1'> <FontAwesomeIcon icon={["fab", "twitter"]} /> </div>
-              <div className = 'col-sm-1'> <FontAwesomeIcon icon={["fab", "linkedin-in"]} /> </div>
-            </div>
-          </div>
+
+          <a href = "https://github.com/sonamdo" className = "iconWhite">
+            <FontAwesomeIcon icon={["fab", "github"]} />
+          </a>
+
+          <a href = "https://codepen.io/Sonamdo/" className = "iconWhite">
+            <FontAwesomeIcon icon={["fab", "codepen"]} />
+          </a>
+
+          <a href = "https://www.linkedin.com/in/sonam-klein/" className = "iconWhite">
+            <FontAwesomeIcon icon={["fab", "linkedin-in"]} />
+          </a>
+
         </div>
       </div>
     </div>
