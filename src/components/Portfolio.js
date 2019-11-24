@@ -26,15 +26,15 @@ return (
     <div className = "col-sm-4">
       <div className = "thumbnail">
         <div className = "thumbnailPic">
-          <a href = "https://afternoon-taiga-41331.herokuapp.com/">
-            <img src = {require("../images/weatherScreencap.png")} alt = "Weather Website" />
+          <a href = "https://news-tracker-app.herokuapp.com/">
+            <img src = {require("../images/newsScreencap.png")} alt = "Weather Website" />
           </a>
-          <p className = "makeBold">Weather Website</p>
+          <p className = "makeBold">News Tracker</p>
         </div>
-        <a href = "https://afternoon-taiga-41331.herokuapp.com/">
+        <a href = "https://news-tracker-app.herokuapp.com/">
         <div className = "thumbnailText">
-          <p className = "makeBoldDesktop">Weather Website</p>
-          <p className = "description">A single page application which detects your location and makes an api call to let you know the weather. One of my first front end projects, I recently deployed it with Heroku for Back End Practice</p>
+          <p className = "makeBoldDesktop">News Tracker</p>
+          <p className = "description">This app keeps you up to date on the latest headlines and presents the ones that you've added to your following list. Log in is possible with google accounts and your interests are save to Firebase database.</p>
         </div>
         </a>
       </div>
