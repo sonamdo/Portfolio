@@ -1,56 +1,93 @@
 import React from 'react';
-import $ from 'jquery';
+import emailjs from 'emailjs-com'
 
-const Contact = () => {
+export default class extends React.Component {
+  constructor(props) {
+	super(props);
+	this.state = { feedback: '', name: '', email: '' };
+	this.handleEmailChange = this.handleEmailChange.bind(this);
+  this.handleNameChange = this.handleNameChange.bind(this);
+  this.handleMessageChange = this.handleMessageChange.bind(this);
+	this.handleSubmit = this.handleSubmit.bind(this);
+  }
 
-$(document).ready(function(){
+  render() {
+  	return (
+      <div className = "container" id = "contact">
+          <h2 className = "sectionBanner" id = "contactAnchor">Contact</h2>
+      	<form className="test-mailing">
+        	<div className = "form-row form-group">
+            <div className = "col-md-2">
+            </div>
+            <div className = "col-md-4">
+              <input
+                placeholder="Name"
+                onChange={this.handleNameChange}
+                className ="form-control"
+              />
+            </div>
+            <div className="col-md-4">
+              <input
+                placeholder="Email"
+                onChange={this.handleEmailChange}
+                className ="form-control"
+              />
+            </div>
+            <div className = "col-md-2">
+            </div>
+          </div>
+          <div className = "form-row form-group" id ="contactMessage">
+            <div className = "col-md-2">
+            </div>
+            <div className = "col-md-8">
+            	<textarea
+              	id="test-mailing"
+              	name="test-mailing"
+              	onChange={this.handleMessageChange}
+                className ="form-control"
+              	placeholder="Message..."
+              	required
+              	value={this.state.feedback}
+              	style={{width: '100%', height: '150px'}}
+            	/>
+            </div>
+            <div className = "col-md-2">
+            </div>
+        	</div>
+          <div className = "text-center">
+        	<input id ="submitButton" type="button" value="Submit" className="btn btn--submit" onClick={this.handleSubmit} />
+          </div>
+      	</form>
+      </div>
+  	)
+  }
 
-  function validateEmail(email) {
-    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(email.toLowerCase());
+  handleNameChange(event) {
+    this.setState({name: event.target.value})
+  }
+
+  handleEmailChange(event) {
+    this.setState({email: event.target.value})
+  }
+
+  handleMessageChange(event) {
+    this.setState({feedback: event.target.value})
+  }
+
+  handleSubmit() {
+    alert('Message Sent. Thanks for reaching out!')
+    var templateParams = {
+      to_name: "Sonam",
+      from_name: this.state.name,
+      from_email: this.state.email,
+      message_html: this.state.feedback
   };
 
-    $("#submit").on("click",function(){
-
-      var from = $("#from").val();
-      var email = $("#email").val();
-      var message = $("#message").val();
-
-      if(validateEmail(email)){
-        if (message.length == 0){
-          alert("message required")
-        }
-        else{
-          if (from.length == 0){
-            alert("from field required")
-          }
-          else {
-            // socket.emit('sendEmail',{
-            //   from,
-            //   email,
-            //   message
-            // });
-            alert("Message sent, thanks for reaching out!")
-          }
-        }
-      }
-      else {
-        alert("invalid email address");
-        return
-      }
+emailjs.send('gmail', 'template_contact_email', templateParams, 'user_nOYSgWXhnCkGASfNSVNuW')
+    .then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+       console.log('FAILED...', error);
     });
-
-  });
-
-  return(
-    <div className = "container text-center" id = "contactContainer">
-        <h3 id = "contact">Get in touch</h3>
-        <input type = "text" placeholder = "Name" id ="from" class = "contactForm" /><br />
-        <input type = "text" placeholder = "Email" id = "email" class = "contactForm" /><br />
-        <input type = "text" placeholder = "Topic" id = "message" class = "contactForm" /><br />
-      <button type = "button" class = "btn btn-default" id = "submit">Submit</button>
-    </div>
-  )
+  }
 }
-
-export default Contact;

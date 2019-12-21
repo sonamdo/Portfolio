@@ -6,7 +6,7 @@ const Footer = () => (
     <div className = 'container'>
       <div className = 'row'>
         <div className = 'col-sm-4'>
-          sonamklein@gmail.com
+          Sonam Klein
         </div>
         <div className = 'col-sm-4'>
         </div>

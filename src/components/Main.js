@@ -15,6 +15,7 @@ const Main = () => (
     <Portfolio />
     <Skills />
     <Courses />
+    <Contact />
     <Footer />
   </div>
 )
